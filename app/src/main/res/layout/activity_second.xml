@@ -1,0 +1,39 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iics.ust.intent_4itg.MainActivity">
+
+
+    <TextView
+        android:id="@+id/rawAverageText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="159dp"
+        android:layout_above="@+id/finalGradeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/finalGradeText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="169dp"
+        android:layout_above="@+id/btnBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="BACK"
+        android:onClick="toFirstActivity" />
+
+</RelativeLayout>

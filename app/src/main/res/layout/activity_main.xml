@@ -1,0 +1,113 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="39dp"
+        android:text="Quiz 1:" />
+
+    <EditText
+        android:id="@+id/quizOneValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quizOneValue"
+        android:layout_marginTop="15dp"
+        android:text="Quiz 2:"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:id="@+id/quizTwoValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/quizOneValue"
+        android:layout_below="@+id/quizOneValue"
+        android:ems="5"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/quizTwoValue"
+        android:layout_marginTop="23dp"
+        android:text="Seatworks:" />
+
+    <EditText
+        android:id="@+id/seatworksValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/quizTwoValue"
+        android:layout_below="@+id/quizTwoValue"
+        android:ems="5"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/seatworksValue"
+        android:layout_marginTop="27dp"
+        android:text="Lab Exercises: " />
+
+    <EditText
+        android:id="@+id/labExercisesValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/seatworksValue"
+        android:layout_below="@+id/seatworksValue"
+        android:ems="5"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_centerVertical="true"
+        android:text="Major Exam: " />
+
+    <EditText
+        android:id="@+id/majorExamValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/labExercisesValue" />
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/majorExamValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="COMPUTE"
+        android:onClick="callSecondActivity" />
+
+</RelativeLayout>
